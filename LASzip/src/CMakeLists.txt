@@ -84,11 +84,11 @@ endif()
 
 include_directories(. ../dll)
 
-add_library(laszip SHARED ${files})
+add_library(laszip ${files})
 
 install(TARGETS laszip 
-	RUNTIME DESTINATION bin/
 	LIBRARY DESTINATION lib/
+	ARCHIVE DESTINATION lib/
 )
 
 
