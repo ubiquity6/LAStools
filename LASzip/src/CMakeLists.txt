@@ -91,6 +91,11 @@ install(TARGETS laszip
 	ARCHIVE DESTINATION lib/
 )
 
+install(
+	FILES ../dll/laszip_api.h
+	DESTINATION include
+)
+
 
 
 
